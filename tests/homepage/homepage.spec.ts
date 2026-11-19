@@ -7,7 +7,7 @@ test.describe('Homepage', () => {
             .getByRole('link')
             .filter({ has: page.getByTestId('product-name') });
         // if we have this as requirement - to show top 9 items (for example)
-        // if not - remove this chek
+        // if not - remove this check
         await expect(productCards).toHaveCount(9);
 
         const firstCard = productCards.first();
