@@ -7,6 +7,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
+  globalTimeout: 3_600_000,
   use: {
     baseURL: 'https://practicesoftwaretesting.com/',
     testIdAttribute: 'data-test',
