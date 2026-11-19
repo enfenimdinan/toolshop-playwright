@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "es2022",
+    "module": "nodenext",
     "strict": true,
+    "noEmit": true,
     "skipLibCheck": true,
-    "outDir": "dist"
+    "types": ["node"]
   },
-  "include": ["src"]
+  "include": ["tests/**/*.ts", "playwright.config.ts"]
 }
